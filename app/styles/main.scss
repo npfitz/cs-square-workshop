@@ -7,3 +7,13 @@ body {
   background-color: $background--light;
   padding: $half-space;
 }
+
+figure {
+  display: inline-block;
+  margin: 0px;
+}
+
+img.tile {
+  max-height: 100%;
+  max-width: 100%;  
+}

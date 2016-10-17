@@ -47,6 +47,7 @@ export default {
 
   views: {
     index: 'app/index.html',
+    callback: 'app/callback.html',
     src: 'app/views/**/*.html',
     dest: 'app/js'
   },

@@ -1,6 +1,5 @@
 import angular from 'angular';
 import angularMaterial from 'angular-material';
-import API500px from '500px';
 
 // angular modules
 import constants from './constants';
@@ -25,12 +24,14 @@ const requires = [
 ];
 
 // setup 500px api 
-let api500px = new API500px('UBTP38hDiytkoDnEI9O3KQCVHUvs09uUrqJOHXgk');
+_500px.init({
+  sdk_key: 'a584e6e0dfbbb816269e61e8cfd1a64362cd980f'
+});
 
 // mount on window for testing
 window.app = angular.module('app', requires);
 
-angular.module('app').constant('api500px', api500px);
+angular.module('app').constant('_500px', _500px);
 angular.module('app').constant('AppSettings', constants);
 
 angular.module('app').config(onConfig);
