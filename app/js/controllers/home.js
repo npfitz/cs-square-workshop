@@ -3,7 +3,7 @@ function HomeCtrl($scope, $timeout, _500px) {
   // ViewModel
   const vm = this;
 
-  _500px.api('/photos/search', {image_size: 3, term: 'cats', rpp: 40}, function (response) {
+  _500px.api('/photos', {image_size: 3, term: 'cats', rpp: 40}, function (response) {
     $timeout(function(){
       vm.photos = response.data.photos;
     })
