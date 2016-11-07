@@ -1,13 +1,11 @@
-function HomeCtrl($scope, $timeout, _500px) {
+function HomeCtrl($scope, images) {
   'ngInject'
   // ViewModel
   const vm = this;
+  vm.photos = images;
 
-  _500px.api('/photos', {image_size: 3, term: 'cats', rpp: 40}, function (response) {
-    $timeout(function(){
-      vm.photos = response.data.photos;
-    })
-  });
+
+
 
 
 }

@@ -1,8 +1,8 @@
-function DetailsCtrl($scope, $timeout, _500px) {
+function DetailsCtrl($scope, image) {
   'ngInject'
   // ViewModel
   const vm = this;
-  
+  vm.photo = image;
 }
 
 export default {
