@@ -1,6 +1,6 @@
 {
   "name": "cs-square-workshop",
-  "version": "1.0.0",
+  "version": "1.1.0-snapshot",
   "author": "Nick Fitzpatick <nickfitz.582@gmail.com>",
   "description": "Boilerplate using AngularJS, SASS, Gulp, and Browserify while also utilizing best practices.",
   "repository": {

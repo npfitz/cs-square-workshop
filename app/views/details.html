@@ -1,0 +1,27 @@
+<style>
+  .flex-container{
+    display: flex;
+    background-color: lightgrey;
+    justify-content: center;
+  }
+  .flex-item{
+    background-color: cornflowerblue;
+    padding: 5px;
+    margin: 10px;
+  }
+
+  p{
+    text-align: center;
+    color: white;
+  }
+
+</style>
+<div>
+ <div class="flex-item">
+   <p><image src={{details.photo.image_url}}/></p>
+ </div>
+ <div class="flex-item">
+   <p>{{details.photo.name}}</p>
+   <p>{{details.photo.description}}</p>
+ </div>
+</div> 

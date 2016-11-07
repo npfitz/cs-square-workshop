@@ -1,5 +1,7 @@
 <div class="image-grid">
     <div ng-repeat="photo in home.photos">
-        <img class="tile" src="{{photo.images[0].url}}"/>
+        <a ui-sref='Details({imageId: photo.id})'>
+          <img class="tile" src="{{photo.images[0].url}}"/>
+        </a>
     </div>
 </div>
