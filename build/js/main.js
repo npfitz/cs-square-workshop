@@ -1,4 +1,4 @@
-(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({"C:\\NodeProjects\\cs-square-workshop\\app\\js\\constants.js":[function(require,module,exports){
+(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({"/Users/wightman/src/cs-square-workshop/app/js/constants.js":[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -11,7 +11,7 @@ var AppSettings = {
 
 exports.default = AppSettings;
 
-},{}],"C:\\NodeProjects\\cs-square-workshop\\app\\js\\controllers\\details.js":[function(require,module,exports){
+},{}],"/Users/wightman/src/cs-square-workshop/app/js/controllers/details.js":[function(require,module,exports){
 'use strict';
 
 DetailsCtrl.$inject = ["$scope", "image"];
@@ -31,7 +31,7 @@ exports.default = {
   fn: DetailsCtrl
 };
 
-},{}],"C:\\NodeProjects\\cs-square-workshop\\app\\js\\controllers\\home.js":[function(require,module,exports){
+},{}],"/Users/wightman/src/cs-square-workshop/app/js/controllers/home.js":[function(require,module,exports){
 'use strict';
 
 HomeCtrl.$inject = ["$scope", "images"];
@@ -51,7 +51,7 @@ exports.default = {
   fn: HomeCtrl
 };
 
-},{}],"C:\\NodeProjects\\cs-square-workshop\\app\\js\\controllers\\index.js":[function(require,module,exports){
+},{}],"/Users/wightman/src/cs-square-workshop/app/js/controllers/index.js":[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -88,7 +88,7 @@ declare(controllers);
 
 exports.default = controllersModule;
 
-},{"./details.js":"C:\\NodeProjects\\cs-square-workshop\\app\\js\\controllers\\details.js","./home.js":"C:\\NodeProjects\\cs-square-workshop\\app\\js\\controllers\\home.js","./search.js":"C:\\NodeProjects\\cs-square-workshop\\app\\js\\controllers\\search.js","angular":"C:\\NodeProjects\\cs-square-workshop\\node_modules\\angular\\index.js"}],"C:\\NodeProjects\\cs-square-workshop\\app\\js\\controllers\\search.js":[function(require,module,exports){
+},{"./details.js":"/Users/wightman/src/cs-square-workshop/app/js/controllers/details.js","./home.js":"/Users/wightman/src/cs-square-workshop/app/js/controllers/home.js","./search.js":"/Users/wightman/src/cs-square-workshop/app/js/controllers/search.js","angular":"/Users/wightman/src/cs-square-workshop/node_modules/angular/index.js"}],"/Users/wightman/src/cs-square-workshop/app/js/controllers/search.js":[function(require,module,exports){
 'use strict';
 
 SearchCtrl.$inject = ["$scope", "$timeout", "_500px"];
@@ -107,7 +107,7 @@ exports.default = {
   fn: SearchCtrl
 };
 
-},{}],"C:\\NodeProjects\\cs-square-workshop\\app\\js\\directives\\example.js":[function(require,module,exports){
+},{}],"/Users/wightman/src/cs-square-workshop/app/js/directives/example.js":[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -135,7 +135,7 @@ exports.default = {
   fn: ExampleDirective
 };
 
-},{}],"C:\\NodeProjects\\cs-square-workshop\\app\\js\\directives\\index.js":[function(require,module,exports){
+},{}],"/Users/wightman/src/cs-square-workshop/app/js/directives/index.js":[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -172,7 +172,7 @@ declare(directives);
 
 exports.default = directivesModule;
 
-},{"./example.js":"C:\\NodeProjects\\cs-square-workshop\\app\\js\\directives\\example.js","angular":"C:\\NodeProjects\\cs-square-workshop\\node_modules\\angular\\index.js"}],"C:\\NodeProjects\\cs-square-workshop\\app\\js\\filters\\example.js":[function(require,module,exports){
+},{"./example.js":"/Users/wightman/src/cs-square-workshop/app/js/directives/example.js","angular":"/Users/wightman/src/cs-square-workshop/node_modules/angular/index.js"}],"/Users/wightman/src/cs-square-workshop/app/js/filters/example.js":[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -190,7 +190,7 @@ exports.default = {
   fn: ExampleFilter
 };
 
-},{}],"C:\\NodeProjects\\cs-square-workshop\\app\\js\\filters\\index.js":[function(require,module,exports){
+},{}],"/Users/wightman/src/cs-square-workshop/app/js/filters/index.js":[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -227,7 +227,7 @@ declare(filters);
 
 exports.default = filtersModule;
 
-},{"./example.js":"C:\\NodeProjects\\cs-square-workshop\\app\\js\\filters\\example.js","angular":"C:\\NodeProjects\\cs-square-workshop\\node_modules\\angular\\index.js"}],"C:\\NodeProjects\\cs-square-workshop\\app\\js\\main.js":[function(require,module,exports){
+},{"./example.js":"/Users/wightman/src/cs-square-workshop/app/js/filters/example.js","angular":"/Users/wightman/src/cs-square-workshop/node_modules/angular/index.js"}],"/Users/wightman/src/cs-square-workshop/app/js/main.js":[function(require,module,exports){
 'use strict';
 
 var _angular = require('angular');
@@ -289,7 +289,7 @@ _angular2.default.bootstrap(document, ['app'], {
   strictDi: true
 });
 
-},{"./constants":"C:\\NodeProjects\\cs-square-workshop\\app\\js\\constants.js","./controllers":"C:\\NodeProjects\\cs-square-workshop\\app\\js\\controllers\\index.js","./directives":"C:\\NodeProjects\\cs-square-workshop\\app\\js\\directives\\index.js","./filters":"C:\\NodeProjects\\cs-square-workshop\\app\\js\\filters\\index.js","./on_config":"C:\\NodeProjects\\cs-square-workshop\\app\\js\\on_config.js","./on_run":"C:\\NodeProjects\\cs-square-workshop\\app\\js\\on_run.js","./services":"C:\\NodeProjects\\cs-square-workshop\\app\\js\\services\\index.js","./templates":"C:\\NodeProjects\\cs-square-workshop\\app\\js\\templates.js","angular":"C:\\NodeProjects\\cs-square-workshop\\node_modules\\angular\\index.js","angular-material":"C:\\NodeProjects\\cs-square-workshop\\node_modules\\angular-material\\index.js","angular-ui-router":"C:\\NodeProjects\\cs-square-workshop\\node_modules\\angular-ui-router\\release\\angular-ui-router.js"}],"C:\\NodeProjects\\cs-square-workshop\\app\\js\\on_config.js":[function(require,module,exports){
+},{"./constants":"/Users/wightman/src/cs-square-workshop/app/js/constants.js","./controllers":"/Users/wightman/src/cs-square-workshop/app/js/controllers/index.js","./directives":"/Users/wightman/src/cs-square-workshop/app/js/directives/index.js","./filters":"/Users/wightman/src/cs-square-workshop/app/js/filters/index.js","./on_config":"/Users/wightman/src/cs-square-workshop/app/js/on_config.js","./on_run":"/Users/wightman/src/cs-square-workshop/app/js/on_run.js","./services":"/Users/wightman/src/cs-square-workshop/app/js/services/index.js","./templates":"/Users/wightman/src/cs-square-workshop/app/js/templates.js","angular":"/Users/wightman/src/cs-square-workshop/node_modules/angular/index.js","angular-material":"/Users/wightman/src/cs-square-workshop/node_modules/angular-material/index.js","angular-ui-router":"/Users/wightman/src/cs-square-workshop/node_modules/angular-ui-router/release/angular-ui-router.js"}],"/Users/wightman/src/cs-square-workshop/app/js/on_config.js":[function(require,module,exports){
 (function (process){
 'use strict';
 
@@ -360,7 +360,7 @@ exports.default = OnConfig;
 
 }).call(this,require('_process'))
 
-},{"_process":"C:\\NodeProjects\\cs-square-workshop\\node_modules\\browserify\\node_modules\\process\\browser.js"}],"C:\\NodeProjects\\cs-square-workshop\\app\\js\\on_run.js":[function(require,module,exports){
+},{"_process":"/Users/wightman/src/cs-square-workshop/node_modules/process/browser.js"}],"/Users/wightman/src/cs-square-workshop/app/js/on_run.js":[function(require,module,exports){
 'use strict';
 
 OnRun.$inject = ["$rootScope", "AppSettings"];
@@ -386,7 +386,7 @@ function OnRun($rootScope, AppSettings) {
 
 exports.default = OnRun;
 
-},{}],"C:\\NodeProjects\\cs-square-workshop\\app\\js\\services\\example.js":[function(require,module,exports){
+},{}],"/Users/wightman/src/cs-square-workshop/app/js/services/example.js":[function(require,module,exports){
 'use strict';
 
 ExampleService.$inject = ["$http"];
@@ -416,7 +416,7 @@ exports.default = {
   fn: ExampleService
 };
 
-},{}],"C:\\NodeProjects\\cs-square-workshop\\app\\js\\services\\index.js":[function(require,module,exports){
+},{}],"/Users/wightman/src/cs-square-workshop/app/js/services/index.js":[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -453,17 +453,17 @@ declare(services);
 
 exports.default = servicesModule;
 
-},{"./example.js":"C:\\NodeProjects\\cs-square-workshop\\app\\js\\services\\example.js","angular":"C:\\NodeProjects\\cs-square-workshop\\node_modules\\angular\\index.js"}],"C:\\NodeProjects\\cs-square-workshop\\app\\js\\templates.js":[function(require,module,exports){
+},{"./example.js":"/Users/wightman/src/cs-square-workshop/app/js/services/example.js","angular":"/Users/wightman/src/cs-square-workshop/node_modules/angular/index.js"}],"/Users/wightman/src/cs-square-workshop/app/js/templates.js":[function(require,module,exports){
 'use strict';
 
 angular.module('templates', []).run(['$templateCache', function ($templateCache) {
   $templateCache.put('details.html', '');
-  $templateCache.put('home.html', '<div class="image-grid">\r\n    <div ng-repeat="photo in home.photos">\r\n        <img class="tile" src="{{photo.images[0].url}}"/>\r\n    </div>\r\n</div>');
+  $templateCache.put('home.html', '<div class="image-grid">\n    <div ng-repeat="photo in home.photos">\n        <img class="tile" src="{{photo.images[0].url}}"/>\n    </div>\n</div>\n');
   $templateCache.put('search.html', '');
-  $templateCache.put('directives/example.html', '<div class="example-directive">\r\n  <h1>Directive title: {{title}}</h1>\r\n  <p>This is an example of a directive, click me!</p>\r\n</div>\r\n');
+  $templateCache.put('directives/example.html', '<div class="example-directive">\n  <h1>Directive title: {{title}}</h1>\n  <p>This is an example of a directive, click me!</p>\n</div>\n');
 }]);
 
-},{}],"C:\\NodeProjects\\cs-square-workshop\\node_modules\\angular-animate\\angular-animate.js":[function(require,module,exports){
+},{}],"/Users/wightman/src/cs-square-workshop/node_modules/angular-animate/angular-animate.js":[function(require,module,exports){
 /**
  * @license AngularJS v1.5.8
  * (c) 2010-2016 Google, Inc. http://angularjs.org
@@ -4604,11 +4604,11 @@ angular.module('ngAnimate', [], function initAngularHelpers() {
 
 })(window, window.angular);
 
-},{}],"C:\\NodeProjects\\cs-square-workshop\\node_modules\\angular-animate\\index.js":[function(require,module,exports){
+},{}],"/Users/wightman/src/cs-square-workshop/node_modules/angular-animate/index.js":[function(require,module,exports){
 require('./angular-animate');
 module.exports = 'ngAnimate';
 
-},{"./angular-animate":"C:\\NodeProjects\\cs-square-workshop\\node_modules\\angular-animate\\angular-animate.js"}],"C:\\NodeProjects\\cs-square-workshop\\node_modules\\angular-aria\\angular-aria.js":[function(require,module,exports){
+},{"./angular-animate":"/Users/wightman/src/cs-square-workshop/node_modules/angular-animate/angular-animate.js"}],"/Users/wightman/src/cs-square-workshop/node_modules/angular-aria/angular-aria.js":[function(require,module,exports){
 /**
  * @license AngularJS v1.5.8
  * (c) 2010-2016 Google, Inc. http://angularjs.org
@@ -5015,11 +5015,11 @@ ngAriaModule.directive('ngShow', ['$aria', function($aria) {
 
 })(window, window.angular);
 
-},{}],"C:\\NodeProjects\\cs-square-workshop\\node_modules\\angular-aria\\index.js":[function(require,module,exports){
+},{}],"/Users/wightman/src/cs-square-workshop/node_modules/angular-aria/index.js":[function(require,module,exports){
 require('./angular-aria');
 module.exports = 'ngAria';
 
-},{"./angular-aria":"C:\\NodeProjects\\cs-square-workshop\\node_modules\\angular-aria\\angular-aria.js"}],"C:\\NodeProjects\\cs-square-workshop\\node_modules\\angular-material\\angular-material.js":[function(require,module,exports){
+},{"./angular-aria":"/Users/wightman/src/cs-square-workshop/node_modules/angular-aria/angular-aria.js"}],"/Users/wightman/src/cs-square-workshop/node_modules/angular-material/angular-material.js":[function(require,module,exports){
 /*!
  * Angular Material Design
  * https://github.com/angular/material
@@ -37970,7 +37970,7 @@ angular.module("material.core").constant("$MD_THEME_CSS", "md-autocomplete.md-TH
 
 
 })(window, window.angular);;window.ngMaterial={version:{full: "1.1.1"}};
-},{}],"C:\\NodeProjects\\cs-square-workshop\\node_modules\\angular-material\\index.js":[function(require,module,exports){
+},{}],"/Users/wightman/src/cs-square-workshop/node_modules/angular-material/index.js":[function(require,module,exports){
 // Should already be required, here for clarity
 require('angular');
 
@@ -37984,7 +37984,7 @@ require('./angular-material');
 // Export namespace
 module.exports = 'ngMaterial';
 
-},{"./angular-material":"C:\\NodeProjects\\cs-square-workshop\\node_modules\\angular-material\\angular-material.js","angular":"C:\\NodeProjects\\cs-square-workshop\\node_modules\\angular\\index.js","angular-animate":"C:\\NodeProjects\\cs-square-workshop\\node_modules\\angular-animate\\index.js","angular-aria":"C:\\NodeProjects\\cs-square-workshop\\node_modules\\angular-aria\\index.js"}],"C:\\NodeProjects\\cs-square-workshop\\node_modules\\angular-ui-router\\release\\angular-ui-router.js":[function(require,module,exports){
+},{"./angular-material":"/Users/wightman/src/cs-square-workshop/node_modules/angular-material/angular-material.js","angular":"/Users/wightman/src/cs-square-workshop/node_modules/angular/index.js","angular-animate":"/Users/wightman/src/cs-square-workshop/node_modules/angular-animate/index.js","angular-aria":"/Users/wightman/src/cs-square-workshop/node_modules/angular-aria/index.js"}],"/Users/wightman/src/cs-square-workshop/node_modules/angular-ui-router/release/angular-ui-router.js":[function(require,module,exports){
 /**
  * State-based routing for AngularJS
  * @version v0.3.1
@@ -42561,7 +42561,7 @@ angular.module('ui.router.state')
   .filter('isState', $IsStateFilter)
   .filter('includedByState', $IncludedByStateFilter);
 })(window, window.angular);
-},{}],"C:\\NodeProjects\\cs-square-workshop\\node_modules\\angular\\angular.js":[function(require,module,exports){
+},{}],"/Users/wightman/src/cs-square-workshop/node_modules/angular/angular.js":[function(require,module,exports){
 /**
  * @license AngularJS v1.5.8
  * (c) 2010-2016 Google, Inc. http://angularjs.org
@@ -74330,11 +74330,11 @@ $provide.value("$locale", {
 })(window);
 
 !window.angular.$$csp().noInlineStyle && window.angular.element(document.head).prepend('<style type="text/css">@charset "UTF-8";[ng\\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>');
-},{}],"C:\\NodeProjects\\cs-square-workshop\\node_modules\\angular\\index.js":[function(require,module,exports){
+},{}],"/Users/wightman/src/cs-square-workshop/node_modules/angular/index.js":[function(require,module,exports){
 require('./angular');
 module.exports = angular;
 
-},{"./angular":"C:\\NodeProjects\\cs-square-workshop\\node_modules\\angular\\angular.js"}],"C:\\NodeProjects\\cs-square-workshop\\node_modules\\browserify\\node_modules\\process\\browser.js":[function(require,module,exports){
+},{"./angular":"/Users/wightman/src/cs-square-workshop/node_modules/angular/angular.js"}],"/Users/wightman/src/cs-square-workshop/node_modules/process/browser.js":[function(require,module,exports){
 // shim for using process in browser
 var process = module.exports = {};
 
@@ -74516,7 +74516,7 @@ process.chdir = function (dir) {
 };
 process.umask = function() { return 0; };
 
-},{}]},{},["C:\\NodeProjects\\cs-square-workshop\\app\\js\\main.js"])
+},{}]},{},["/Users/wightman/src/cs-square-workshop/app/js/main.js"])
 
 
 //# sourceMappingURL=main.js.map
