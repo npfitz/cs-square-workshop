@@ -7,10 +7,20 @@
     padding: 5px;
     margin: 10px;
   }
-
-  p{
-    text-align: left;
+  h1{
+  text-align: center;
+  }
+  .author{
     color: black;
+  }
+  p{
+    text-align: center;
+    color: white;
+    font-weight: lighter;
+  }
+  .boxed {
+    border: 1px solid white ;
+    padding: 15px;
   }
 
 </style>
@@ -19,12 +29,8 @@
    <p><image src={{details.photo.image_url}}/></p>
  </div>
  <div class="flex-item">
-   <h1>{{details.photo.name}} - {{details.photo.rating}}</h1>
-   <p>{{details.photo.description}}</p>
-   <br>
-   <p>{{details.photo.user.firstname}} {{details.photo.user.lastname}}</p>
-   <p>{{details.photo.user.city}}, {{details.photo.user.country}}</p>
-
-   <p ng-repeat="(key, value) in details.photo|filter: details.filter">{{key}}</p>
+   <h1>{{details.photo.name}}</h1>
+   <p class="author">{{details.photo.user.fullname}}</p>
+   <p class="boxed" ng-bind-html="details.photo.description | parseUrlFilter"></p>
  </div>
 </div>
