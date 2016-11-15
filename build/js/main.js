@@ -24,12 +24,19 @@ function DetailsCtrl($scope, image) {
 
   var vm = this;
   vm.photo = image;
+
+  vm.filter = ['name', 'description', 'rating', 'created_at', 'taken_at', 'user'];
 }
 
 exports.default = {
   name: 'DetailsCtrl',
   fn: DetailsCtrl
 };
+
+// var paragraph = document.createElement("P");
+// var text = document.createTextNode(item);
+// paragraph.appendChild(text);
+// document.body.appendChild(paragraph);
 
 },{}],"C:\\Users\\Jason\\Documents\\cs-square-workshop\\app\\js\\controllers\\home.js":[function(require,module,exports){
 'use strict';
@@ -457,7 +464,7 @@ exports.default = servicesModule;
 'use strict';
 
 angular.module('templates', []).run(['$templateCache', function ($templateCache) {
-  $templateCache.put('details.html', '<style>\r\n  .flex-container{\r\n    display: flex;\r\n    background-color: lightgrey;\r\n    justify-content: center;\r\n  }\r\n  .flex-item{\r\n    background-color: cornflowerblue;\r\n    padding: 5px;\r\n    margin: 10px;\r\n  }\r\n\r\n  p{\r\n    text-align: center;\r\n    color: white;\r\n  }\r\n\r\n</style>\r\n<style>\r\n   div{\r\n     align-items: center;\r\n     background-color: orange;\r\n     position: relative;\r\n   }\r\n\r\n   p{\r\n     text-align: center;\r\n     color: white;\r\n   }\r\n\r\n   image{\r\n     align: right;\r\n   }\r\n </style>\r\n\r\n <div>\r\n   <p><image src={{details.photo.image_url}}/></p>\r\n </div>\r\n <div>\r\n   <p>{{details.photo.name}}</p>\r\n   <p>{{details.photo.description}}</p>\r\n </div>\r\n');
+  $templateCache.put('details.html', '<style>\r\n  .flex-container{\r\n    display: flex;\r\n    justify-content: center;\r\n  }\r\n  .flex-item{\r\n    padding: 5px;\r\n    margin: 10px;\r\n  }\r\n\r\n  p{\r\n    text-align: left;\r\n    color: black;\r\n  }\r\n\r\n</style>\r\n<div class = "flex-container">\r\n <div class="flex-item">\r\n   <p><image src={{details.photo.image_url}}/></p>\r\n </div>\r\n <div class="flex-item">\r\n   <h1>{{details.photo.name}} - {{details.photo.rating}}</h1>\r\n   <p>{{details.photo.description}}</p>\r\n   <br>\r\n   <p>{{details.photo.user.firstname}} {{details.photo.user.lastname}}</p>\r\n   <p>{{details.photo.user.city}}, {{details.photo.user.country}}</p>\r\n\r\n   <p ng-repeat="(key, value) in details.photo|filter: details.filter">{{key}}</p>\r\n </div>\r\n</div>\r\n');
   $templateCache.put('home.html', '<div class="image-grid">\r\n    <div ng-repeat="photo in home.photos">\r\n        <a ui-sref=\'Details({imageId: photo.id})\'>\r\n          <img class="tile" src="{{photo.images[0].url}}"/>\r\n        </a>\r\n    </div>\r\n</div>\r\n');
   $templateCache.put('search.html', '');
   $templateCache.put('directives/example.html', '<div class="example-directive">\r\n  <h1>Directive title: {{title}}</h1>\r\n  <p>This is an example of a directive, click me!</p>\r\n</div>\r\n');

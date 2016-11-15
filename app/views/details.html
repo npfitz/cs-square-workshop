@@ -1,27 +1,30 @@
 <style>
   .flex-container{
     display: flex;
-    background-color: lightgrey;
     justify-content: center;
   }
   .flex-item{
-    background-color: cornflowerblue;
     padding: 5px;
     margin: 10px;
   }
 
   p{
-    text-align: center;
-    color: white;
+    text-align: left;
+    color: black;
   }
 
 </style>
-<div>
+<div class = "flex-container">
  <div class="flex-item">
    <p><image src={{details.photo.image_url}}/></p>
  </div>
  <div class="flex-item">
-   <p>{{details.photo.name}}</p>
+   <h1>{{details.photo.name}} - {{details.photo.rating}}</h1>
    <p>{{details.photo.description}}</p>
+   <br>
+   <p>{{details.photo.user.firstname}} {{details.photo.user.lastname}}</p>
+   <p>{{details.photo.user.city}}, {{details.photo.user.country}}</p>
+
+   <p ng-repeat="(key, value) in details.photo|filter: details.filter">{{key}}</p>
  </div>
-</div> 
+</div>
