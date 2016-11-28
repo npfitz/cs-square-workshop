@@ -1,5 +1,6 @@
 import angular from 'angular';
 import angularMaterial from 'angular-material';
+import angularSanitize from 'angular-sanitize';
 
 // angular modules
 import constants from './constants';
@@ -20,7 +21,8 @@ const requires = [
   'app.filters',
   'app.controllers',
   'app.services',
-  'app.directives'
+  'app.directives',
+  'ngSanitize'
 ];
 
 // setup 500px api 
