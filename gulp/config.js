@@ -1,6 +1,6 @@
 export default {
 
-  browserPort: 80,
+  browserPort: (process.env.PORT || 3000),
   UIPort: 3001,
   testPort: 3002,
 
