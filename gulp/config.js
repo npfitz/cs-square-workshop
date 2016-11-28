@@ -1,6 +1,6 @@
 export default {
 
-  browserPort: 3000,
+  browserPort: 80,
   UIPort: 3001,
   testPort: 3002,
 
